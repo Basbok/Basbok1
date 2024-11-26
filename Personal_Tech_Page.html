@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Tech Page</title>
+    <style>
+        /* General reset */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background-color: #1e1e2f;
+            background-image: url('https://via.placeholder.com/1920x1080?text=Tech+Background'); /* Replace with your preferred background */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            line-height: 1.6;
+        }
+
+        /* Overlay */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+
+        /* Content container */
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Header section */
+        header {
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Section */
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive grid for skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill h3 {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Tech Page</h1>
+            <p>Sharing my passion for computers, programming, and learning.</p>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p>I am a tech enthusiast who loves exploring new technologies, understanding how computers work, and teaching others about the fascinating world of computing.</p>
+        </section>
+
+        <section>
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Programming</h3>
+                    <p>Proficient in Python, JavaScript, and C++.</p>
+                </div>
+                <div class="skill">
+                    <h3>Machine Learning</h3>
+                    <p>Experience in building ML models and working with data analysis tools.</p>
+                </div>
+                <div class="skill">
+                    <h3>Web Development</h3>
+                    <p>Skilled in creating responsive and user-friendly websites.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact Me</h2>
+            <p>If you'd like to collaborate or have any questions, feel free to reach out.</p>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Your Name. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+</html>
